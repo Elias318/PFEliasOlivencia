@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* DEFINO SECCIONES */
+
+/* MOBILE */
+@media screen and (min-width:0px) and (max-width:768px) {
+   #gridcontainer-index{
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "servicios"
+            "sobre-nosotros"
+            "preguntas-frecuentes"
+            "footer"
+        ;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(5 auto);
+        
+   }
+   #gridcontainer-servicios{
+    display: grid;
+    grid-template-areas:
+        "header"
+        "iconos-servicios"
+        "footer"
+    ;
+    grid-template-columns: 1;
+    grid-template-rows: 3;
+
+   }
+   #gridcontainer-preguntas{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "vacunacion"
+        "desparacitacion"
+        "chequeos"
+        "castracion"
+        "footer"
+    ;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(6 auto);
+   }
+   #gridcontainer-nosotros{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "quienes-somos"
+        "logo"
+        "biografia"
+        "img-doctora"
+        "nuestro-local"
+        "footer"
+    ;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(7 auto);
+   }
+   #gridcontainer-contacto{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "datos"
+        "formulario"
+        "map"
+        "footer"
+    ;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(5 auto);
+   }
+   .border{
+    border: 1px solid black;
+   }
+   header{
+    grid-area: header;
+   }
+   /* index */
+   section#servicios{
+    grid-area: servicios;
+   }
+   section#sobre-nosotros{
+    grid-area: sobre-nosotros;
+   }
+   section#preguntas-frecuentes{
+    grid-area: preguntas-frecuentes;
+   }
+   section#iconos-servicios{
+    grid-area: iconos-servicios;
+   }
+   /* servicios */
+   section#iconos-servicios{
+    grid-area: iconos-servicios;
+   }
+   /* preguntas frecuentes */
+   section#vacunacion{
+    grid-area: vacunacion;
+   }
+   section#desparacitacion{
+    grid-area: desparacitacion;
+   }
+   section#chequeos{
+    grid-area: chequeos;
+   }
+   section#castracion{
+    grid-area: castracion;
+   }
+   /* Nosotros */
+   section#quienes-somos{
+    grid-area: quienes-somos;
+   }
+   section#logo{
+    grid-area: logo;
+   }
+   section#biografia{
+    grid-area: biografia;
+   }
+   section#img-doctora{
+    grid-area: img-doctora;
+   }
+   section#nuestro-local{
+    grid-area: nuestro-local;
+   }
+   /*contacto  */
+   section#datos{
+    grid-area: datos;
+   }
+   section#formulario{
+    grid-area: formulario;
+   }
+   section#formulario{
+    grid-area: formulario;
+   }
+   section#map{
+    grid-area: map;
+   }
+
+   footer{
+    grid-area: footer;
+   }
+
+
+};
